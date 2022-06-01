@@ -4,6 +4,7 @@ import argparse
 # TODO: Parse word lists from files
 words = {
 	"codenames_adjective": [
+		"quantum",
         "loud",
 	    "red",
 	    "blue",
@@ -31,9 +32,19 @@ words = {
 	    "hopping",
 	    "orange",
 	    "violet",
-	    "violent"
+	    "violent",
+	    "desolate",
+	    "lone",
+	    "cold",
+	    "solemn",
+	    "raging",
+	    "intelligent",
+	    "american",
 	],
 	"codenames_noun": [
+		"matrix",
+		"wolf",
+		"solace",
 	    "whisper",
 	    "felony",
 	    "moon",

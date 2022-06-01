@@ -102,12 +102,12 @@ words = {
 	    "master"      
 	],
 	"codenames_suffix": [ 
-	    " 4000",
+	    " {}000",
 	    "-II",
-	    " 2.0",
-	    " rev4",
+	    " {}.0",
+	    " rev{}",
 	    "-HX",
-	    " v9",
+	    " v{}",
 	]
 }
 
@@ -129,7 +129,11 @@ def generate_tao_name():
 
     # Hacky way to do 1/5
     if (random.randrange(5) == 4):
-        name += pick_random(words["codenames_suffix"])
+        suffix = pick_random(words["codenames_suffix"])
+        suffix = suffix.format(random.randrange(1, 9))
+        
+        name += suffix
+        
 
     return name
 
